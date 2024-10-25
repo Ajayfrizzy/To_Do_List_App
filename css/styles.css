@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .task-app {
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  #taskInput, #addTaskBtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .filter-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  #taskList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
+  @media (max-width: 600px) {
+    .task-app {
+      width: 100%;
+    }
+  }
+  
