@@ -22,8 +22,8 @@ function renderTasks(filter = "all") {
 
     taskItem.innerHTML = `
       <span>${index +1}.${task.text}</span>
-      <button onclick="toggleComplete(${index})">${task.completed ? "Undo" : "Complete"}</button>
-      <button onclick="deleteTask(${index})">Delete</button>
+      <button class='complete' onclick="toggleComplete(${index})">${task.completed ? "Undo" : "Complete"}</button>
+      <button class='delete' onclick="deleteTask(${index})">Delete</button>
     `;
     taskList.appendChild(taskItem);
   });
